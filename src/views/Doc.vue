@@ -1,0 +1,10 @@
+<template>
+    <aside>
+        <div>button</div>
+        <div>dialog</div>
+        <div>switch</div>
+    </aside>
+    <main>
+        内容
+    </main>
+</template>
