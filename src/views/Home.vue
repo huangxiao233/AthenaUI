@@ -1,19 +1,16 @@
 <template>
 <div class="homePage">
-  <div class="topNav">
-    <div class="logo">logo</div>
-    <div class="menu">
-        <span class="menuItem">菜单1</span>
-        <span class="menuItem">菜单2</span>
-        <span class="menuItem">菜单3</span>
-    </div>
-  </div>
+  <topNav />
   <div class="main">内容</div>
   </div>
 </template>
 <script>
+import topNav from '../components/topNav.vue'
 export default {
-  name: "Home"
+  name: "Home",
+  components:{
+     topNav 
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -21,8 +18,6 @@ export default {
             .logo{
                 margin-right: auto
             }
-            .topNav{
-                display: flex
-            }
+           
         } 
 </style>
