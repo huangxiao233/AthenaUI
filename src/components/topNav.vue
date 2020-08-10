@@ -15,6 +15,9 @@ export default {
 </script>
 <style lang="scss" scoped>
      .topNav{
-                display: flex
+                display: flex;
+                .logo{
+                  margin-right: auto;
+                }
             }
 </style>

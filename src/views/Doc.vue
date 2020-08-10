@@ -1,8 +1,5 @@
 <template>
-  <div class="topNav">
-    <div class="logo"></div>
-    <div class="menu"></div>
-  </div>
+ <NavTop />
   <aside>
     <div>button</div>
     <div>dialog</div>
@@ -11,7 +8,11 @@
   <main>内容</main>
 </template>
 <script>
+import NavTop from "../components/topNav.vue";
 export default {
-    name:'topNav'
-}
+  name: "doc",
+  components: {
+    NavTop
+  }
+};
 </script>
