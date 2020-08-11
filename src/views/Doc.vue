@@ -2,17 +2,21 @@
   <div class="Athena-doc">
     <NavTop />
     <aside>
-      <div class="Athena-docItem">button</div>
-      <div class="Athena-docItem">dialog</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
-      <div class="Athena-docItem">switch</div>
+      <h2>组件列表</h2>
+      <ol>
+        <li>
+          <router-link>switch组件</router-link>
+        </li>
+        <li>
+          <router-link>button组件</router-link>
+        </li>
+        <li>
+          <router-link>dialog组件</router-link>
+        </li>
+        <li>
+          <router-link>tabs组件</router-link>
+        </li>
+      </ol>
     </aside>
     <main>
       <p>content</p>
@@ -49,8 +53,10 @@ export default {
     height: 100px;
   }
   main {
+    font-size: 30px;
     flex: 1;
     overflow-y: scroll;
+    margin-left: 50px
   }
 }
 </style>

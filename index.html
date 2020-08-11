@@ -3,11 +3,29 @@
 <head> 
   <meta charset="UTF-8">
   <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,  maximum-scale=1 ">
   <title>Vite App</title>
 </head>
 <body>
   <div id="app"></div>
+   <script type="text/javascript">
+        ;(function(doc, win) {
+          var docEl = doc.documentElement;
+          var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+        
+          function recalc() {
+            var designWidth = 750;
+            var clientWidth = docEl.clientWidth;
+            // if (!clientWidth || clientWidth > designWidth) return
+            if (!clientWidth) return; // 兼容 ipad
+            docEl.style.fontSize = (100 * clientWidth) / designWidth + 'px';
+          }
+        
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
