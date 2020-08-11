@@ -10,14 +10,15 @@
 </template>
 <script>
 export default {
-    name:'topNav'
-}
+  name: "topNav"
+};
 </script>
 <style lang="scss" scoped>
-     .topNav{
-                display: flex;
-                .logo{
-                  margin-right: auto;
-                }
-            }
+.topNav {
+  display: flex;
+  height: 50px;
+  .logo {
+    margin-right: auto;
+  }
+}
 </style>

@@ -1,11 +1,29 @@
 <template>
- <NavTop />
-  <aside>
-    <div>button</div>
-    <div>dialog</div>
-    <div>switch</div>
-  </aside>
-  <main>内容</main>
+  <div class="Athena-doc">
+    <NavTop />
+    <aside>
+      <div class="Athena-docItem">button</div>
+      <div class="Athena-docItem">dialog</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+      <div class="Athena-docItem">switch</div>
+    </aside>
+    <main>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+      <p>content</p>
+    </main>
+  </div>
 </template>
 <script>
 import NavTop from "../components/topNav.vue";
@@ -16,3 +34,23 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+.Athena-doc {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  height: 100vh;
+  aside {
+    background: red;
+    overflow: scroll;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    height: 100px;
+  }
+  main {
+    flex: 1;
+    overflow-y: scroll;
+  }
+}
+</style>
