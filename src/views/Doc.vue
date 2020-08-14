@@ -2,19 +2,19 @@
   <div class="Athena-doc">
     <NavTop />
     <aside>
-      <h2>组件列表</h2>
+      <h2 >组件列表</h2>
       <ol>
         <li>
-          <router-link>switch组件</router-link>
+          <router-link to="/home">switch组件</router-link>
         </li>
         <li>
-          <router-link>button组件</router-link>
+          <router-link to="/home">button组件</router-link>
         </li>
         <li>
-          <router-link>dialog组件</router-link>
+          <router-link to="/home">dialog组件</router-link>
         </li>
         <li>
-          <router-link>tabs组件</router-link>
+          <router-link to="/home">tabs组件</router-link>
         </li>
       </ol>
     </aside>
